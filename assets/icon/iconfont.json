@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "39119856",
+      "name": "eye-l",
+      "font_class": "eye-l",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "39119855",
+      "name": "portfolio-l",
+      "font_class": "portfolio-l",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "39119857",
+      "name": "heart",
+      "font_class": "heart",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
       "icon_id": "39119794",
       "name": "notes-l",
       "font_class": "notes-l",
