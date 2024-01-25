@@ -1,13 +1,13 @@
 @font-face {
   font-family: "font_family"; /* Project id 2180542 */
-  src: url('iconfont.woff2?t=1706179702186') format('woff2'),
-       url('iconfont.woff?t=1706179702186') format('woff'),
-       url('iconfont.ttf?t=1706179702186') format('truetype');
+  src: url('iconfont.woff2?t=1706185338501') format('woff2'),
+       url('iconfont.woff?t=1706185338501') format('woff'),
+       url('iconfont.ttf?t=1706185338501') format('truetype');
 }
 
 .font_family {
   font-family: "font_family" !important;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -165,7 +165,7 @@
   content: "\e61a";
 }
 
-.icon-czs-paper-plane-l:before {
+.icon-paper-plane-l:before {
   content: "\e61b";
 }
 
