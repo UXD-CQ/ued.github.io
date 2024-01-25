@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "39119794",
+      "name": "notes-l",
+      "font_class": "notes-l",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
       "icon_id": "39119014",
       "name": "fire-l",
       "font_class": "fire-l",
