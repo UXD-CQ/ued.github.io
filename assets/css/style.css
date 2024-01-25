@@ -1077,7 +1077,7 @@ a:hover {
     display: block;
     text-align: center;
     font-size: 20px;
-    font-weight: 200
+    font-weight: 800
 }
 
 .sidenav .nav-item a span {
@@ -1165,7 +1165,8 @@ a:hover {
 
 .sidenav .nav-tags li a .csz {
     font-size: 16px;
-    margin-right: 8px
+    margin-right: 6px;
+    font-weight: 400;
 }
 
 .sidenav-ad {
