@@ -1078,7 +1078,15 @@ a:hover {
     display: block;
     text-align: center;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 800;
+}
+
+.sidenav .nav-item .notion{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 3px;
 }
 
 .sidenav .nav-item a span {
@@ -1171,15 +1179,29 @@ a:hover {
 }
 
 .sidenav-ad {
+    margin-top: 20px;
     font-size: 12px;
     color: #686868;
     display: block;
     text-align: center;
-    padding-top: 12px;
-    border-top: 1px solid #1f1f1f
 }
 
 .sidenav-ad:hover {
+    color: #fff
+}
+
+.sidenav-sw {
+    font-size: 12px;
+    color: #686868;
+    display: block;
+    text-align: center;
+}
+
+.sidenav-sw i {
+    font-size: 12px;
+}
+
+.sidenav-sw:hover {
     color: #fff
 }
 
