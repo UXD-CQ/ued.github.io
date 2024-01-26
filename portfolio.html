@@ -32,8 +32,109 @@ http://www.uxd.net.cn/
         /* 里面只放了iframe */
         .main-po{
             height: 100%;
-            width: 96%;
-            margin: 0 auto
+            width: 94%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        /* 顶部联系方式 */
+        .top-div{
+            position:fixed;
+            top: 0;
+            height: 63px;
+            width: 80%;
+            margin: 0 auto;
+            background: #fff;
+            z-index: 100;
+        }
+        .top-div .top-div-left{
+            float: left;
+            width: auto;
+            height: 100%;
+            padding: 0 29px;
+        }
+        .top-div .top-div-right{
+            float: right;
+            width: auto;
+            height: 100%;
+            padding: 0 29px;
+        }
+        .top-div .top-div-left span{
+            display: block;
+            float: left;
+            height: 100%;
+            line-height: 63px;
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            padding: 0 10px;
+            border: none;
+        }
+        .top-div span:hover{
+            color: #000;
+        }
+        .top-div .top-div-right i{
+            position: relative;
+            display: block;
+            float: right;
+            height: 100%;
+            line-height: 63px;
+            text-align: center;
+            font-size: 24px;
+            color: #666;
+            padding: 0 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .top-div .top-div-right i:hover{
+            color: #000;
+        }
+        .hidden-img{
+            min-width: 160px;
+            max-width: 360px;
+            display: none;
+            position: absolute;
+            top: 50px;
+            transform: translateX(-50%);
+            z-index: 100;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,.12), 0 0 6px rgba(0,0,0,.04);
+            border-radius: 4px;
+        }
+        .hidden-img img{
+            width: 160px;
+        }
+        .top-div .top-div-right i:hover .hidden-img{
+            display: block;
+        }
+        .top-div .top-div-right i span{
+            margin: 0;
+            display: block;
+            line-height: 30px;
+            font-size: 16px;
+            color: #666;
+            padding: 0 10px;
+            border: none;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .top-div .top-div-right i span:first-child{
+            margin-top: 16px;
+        }
+        .top-div .top-div-right i span:last-child{
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+        /* 在此处添加任何其他 CSS 样式 */
+        .copy-prompt {
+            display: none;
+            color: green;
+            font-weight: bold;
+            float: right;
+            line-height: 63px;
+            padding: 0 10px;
         }
     </style>
 </head>
@@ -114,7 +215,51 @@ http://www.uxd.net.cn/
         <!-- 轮播 -->
 
         <!-- 小标签 -->
-
+        <!-- 微信和联系方式 -->
+        <div class="top-div">
+            <div class="top-div-left">
+                <span>姓名：李常卿</span>
+                <span>职位：体验设计师</span>
+                <span>工作年限：4年</span>
+                <span>专业：视觉传达设计·本科</span>
+            </div>
+            <div class="top-div-right">
+                <a href="https://www.yuque.com/qingq-g8c4j" target="_blank">
+                    <i class="csz font_family icon-yuque"></i>
+                </a>
+                <a href="https://github.com/UXD-CQ" target="_blank">
+                    <i class="csz font_family icon-github"></i>
+                </a>
+                <i class="csz font_family icon-feishu" onclick="copyText()">
+                    <div class="hidden-img">
+                        <img src="./images/feishu.png" alt="飞书">
+                        <span>李常卿申请添加你为联系人，点击链接处理</span>
+                        <span id="textToCopy">https://www.feishu.cn/invitation/page/add_contact/?token=646p8c32-f4aa-4c15-a7e0-f1b9c2443230&amp;unique_id=VjZm0Y-NU6vkDSF03T51_g==</span>
+                        <span>点击icon即可复制</span>
+                    </div>
+                </i>
+                <i class="csz font_family icon-email" onclick="copyText()">
+                    <div class="hidden-img">
+                        <span><b>邮箱：</b></span>
+                        <span id="textToCopy"><b>aiui_design@163.com</b></span>
+                        <span>点击icon即可复制</span>
+                    </div>
+                </i>
+                <i class="csz font_family icon-phone" onclick="copyText()">
+                    <div class="hidden-img">
+                        <span><b>电话：</b></span>
+                        <span id="textToCopy"><b>13689152950</b></span>
+                        <span>点击icon即可复制</span>
+                    </div>
+                </i>
+                <i class="csz font_family icon-wechat">
+                    <div class="hidden-img">
+                        <img src="./images/9821706072749_.pic.jpg" alt="微信">
+                    </div>
+                </i>
+                <div class="copy-prompt" id="copyPrompt">复制成功!</div>
+            </div>
+        </div>
         <!-- 内容页 -->
         <iframe class="zpj_box" src="https://pin0yqwck8.feishu.cn/docx/Rk5bdosdWokUorxOOxKcvtHdnMg" frameborder="0"></iframe>
         <!-- banner位 -->
@@ -157,6 +302,32 @@ http://www.uxd.net.cn/
     function scrollToPosition() {
         var container = document.getElementById("scroll-container");
         container.scrollTop = 20;
+    }
+    // 在body标签末尾添加以下脚本
+    function copyText() {
+        // 获取要复制的文本
+        const textToCopy = document.getElementById('textToCopy');
+
+        // 创建临时文本区域以方便复制
+        const textarea = document.createElement('textarea');
+        textarea.value = textToCopy.innerText;
+        document.body.appendChild(textarea);
+
+        // 选择文本区域中的文本
+        textarea.select();
+        document.execCommand('copy');
+
+        // 删除临时文本区域
+        document.body.removeChild(textarea);
+
+        // 显示复制提示
+        const copyPrompt = document.getElementById('copyPrompt');
+        copyPrompt.style.display = 'block';
+
+        // 2秒后隐藏复制提示（根据需要调整）
+        setTimeout(function () {
+            copyPrompt.style.display = 'none';
+        }, 2000);
     }
 </script>
 </body>

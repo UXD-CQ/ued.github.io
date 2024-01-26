@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "39132801",
+      "name": "feishu",
+      "font_class": "feishu",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "39132800",
+      "name": "wechat",
+      "font_class": "wechat",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "39132798",
+      "name": "github",
+      "font_class": "github",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "39132799",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "39132797",
+      "name": "yuque",
+      "font_class": "yuque",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "39132796",
+      "name": "email",
+      "font_class": "email",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
       "icon_id": "39120466",
       "name": "configuration-l",
       "font_class": "configuration-l",

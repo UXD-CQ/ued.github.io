@@ -1,8 +1,8 @@
 @font-face {
   font-family: "font_family"; /* Project id 2180542 */
-  src: url('iconfont.woff2?t=1706198904329') format('woff2'),
-       url('iconfont.woff?t=1706198904329') format('woff'),
-       url('iconfont.ttf?t=1706198904329') format('truetype');
+  src: url('iconfont.woff2?t=1706266284814') format('woff2'),
+       url('iconfont.woff?t=1706266284814') format('woff'),
+       url('iconfont.ttf?t=1706266284814') format('truetype');
 }
 
 .font_family {
@@ -11,6 +11,30 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-feishu:before {
+  content: "\e64a";
+}
+
+.icon-wechat:before {
+  content: "\e64b";
+}
+
+.icon-github:before {
+  content: "\e64c";
+}
+
+.icon-phone:before {
+  content: "\e64d";
+}
+
+.icon-yuque:before {
+  content: "\e64e";
+}
+
+.icon-email:before {
+  content: "\e64f";
 }
 
 .icon-configuration-l:before {
