@@ -20,6 +20,7 @@ http://www.uxd.net.cn/
     <link href="../assets/css/style.css" rel="stylesheet">
     <link href="../assets/icon/style.css" rel="stylesheet">
     <link href="../assets/icon/iconfont.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="./portfolio.css">
     <script type="text/javascript">
         var currentController = "Index";
     </script>
@@ -97,17 +98,17 @@ http://www.uxd.net.cn/
 </div>
 <!-- index -->
 <div class="main-wrap">
-    <div class="main">
+    <div class="main-po">
         <!-- 轮播 -->
-        <div class="board selected-nav">
+        <!-- <div class="board selected-nav">
             <div class="nav-left">
-                <i class="czs-circle"></i>
+                <i class="font_family icon-circle"></i>
                 <span class="selected-nav-cn">设计</span>
                 <span class="selected-nav-en">Design</span>
             </div>
             <div class="navigator">
-                <a href="#" class="up"><i class="czs-angle-up-l"></i></a><a href="#" class="down"><i
-                    class="czs-angle-down-l"></i></a>
+                <a href="#" class="up"><i class="font_family icon-angle-up-l"></i></a><a href="#" class="down"><i
+                    class="font_family icon-angle-down-l"></i></a>
             </div>
             <div class="selected-nav-link-wrapper">
                 <div class="selected-nav-link-item">
@@ -139,11 +140,11 @@ http://www.uxd.net.cn/
 							</span>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- 小标签 -->
 
         <!-- 内容页 -->
-        <iframe class="zpj_box" src="../aqing/about.html" frameborder="0"></iframe>
+        <iframe id="myIframe" class="zpj_box" src="../aqing/about.html" frameborder="0"></iframe>
         <!-- banner位 -->
         <div class="footer-at row">
             <div class="xs-12 sm-12 md-6" style="margin-bottom: 10px;">
@@ -171,5 +172,15 @@ http://www.uxd.net.cn/
 </div>
 <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="../assets/js/main.js"></script>
+<script src="./portfolio.js"></script>
+<script>
+    // 加载后滚动 iframe 的函数
+    function scrollIframe() {
+        const iframe = document.getElementById('myIframe');
+        iframe.contentWindow.scrollTo(0, 800);
+    }
+    // 添加事件监听器以在 iframe 加载后执行scrollIframe 函数
+    document.getElementById('myIframe').addEventListener('load', scrollIframe);
+</script>
 </body>
 </html>
