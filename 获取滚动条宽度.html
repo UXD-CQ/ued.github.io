@@ -1,0 +1,56 @@
+<html>
+
+<head>
+  <title>获取滚动条宽度</title>
+  <style>
+    body{
+      margin: 0;
+      background-color: red;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #666;
+      border-radius: 10px;
+      border: 2px solid #fff;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #333;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    ::-webkit-scrollbar-track:hover {
+      background-color: #ddd;
+    }
+
+    .box{
+      width: 100%;
+      height: 1000px;
+      overflow: auto;
+      background-color: #f5f5f5;
+    }
+    .box p{
+      font-size: 22px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <p>这是一段文本，用来测试滚动条的宽度。</p>
+    <p>这是一段文本，用来测试滚动条的宽度。</p>
+    <p>这是一段文本，用来测试滚动条的宽度。</p>
+    <p>这是一段文本，用来测试滚动条的宽度。</p>
+  </div>
+</body>
+
+</html>

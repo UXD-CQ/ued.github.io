@@ -821,8 +821,9 @@ a:hover {
     color: #666
 }
 
-.panel .panel-title .iconfont {
-    font-weight: 100
+.panel .panel-title .font_family {
+    font-weight: 200;
+    font-size: 12px;
 }
 
 .panel .panel-body {
@@ -1599,7 +1600,9 @@ a:hover {
 /*# sourceMappingURL=style.css.map */
 /* 其他 */
 .zpj_box{
-    height: 980px;
+    height: 100%;
     width: 100%;
-    border-radius: 16px 16px 16px 16px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
 }

@@ -6,6 +6,55 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "39120466",
+      "name": "configuration-l",
+      "font_class": "configuration-l",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "39120467",
+      "name": "transmission-l",
+      "font_class": "transmission-l",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "39120463",
+      "name": "keyboard-l",
+      "font_class": "keyboard-l",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "39120465",
+      "name": "clock-l",
+      "font_class": "clock-l",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "39120469",
+      "name": "block-l",
+      "font_class": "block-l",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "39120464",
+      "name": "cube-l",
+      "font_class": "cube-l",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "39120468",
+      "name": "hand-touch",
+      "font_class": "hand-touch",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
       "icon_id": "39120173",
       "name": "people",
       "font_class": "people",
