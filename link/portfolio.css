@@ -1,0 +1,123 @@
+#scroll-container {
+    height: 100%;
+    overflow: hidden
+}
+
+.main-po {
+    height: 100%;
+    width: 94%;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.top-div {
+    position: fixed;
+    top: 0;
+    height: 63px;
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    z-index: 100
+}
+
+.top-div .top-div-left {
+    float: left;
+    width: auto;
+    height: 100%;
+    padding: 0 29px
+}
+
+.top-div .top-div-right {
+    float: right;
+    width: auto;
+    height: 100%;
+    padding: 0 29px
+}
+
+.top-div .top-div-left span {
+    display: block;
+    float: left;
+    height: 100%;
+    line-height: 63px;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    padding: 0 10px;
+    border: none
+}
+
+.top-div span:hover {
+    color: #000
+}
+
+.top-div .top-div-right i {
+    position: relative;
+    display: block;
+    float: right;
+    height: 100%;
+    line-height: 63px;
+    text-align: center;
+    font-size: 24px;
+    color: #666;
+    padding: 0 10px;
+    border: none;
+    cursor: pointer
+}
+
+.top-div .top-div-right i:hover {
+    color: #000
+}
+
+.hidden-img {
+    min-width: 160px;
+    max-width: 360px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    transform: translateX(-50%);
+    z-index: 100;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, 4%);
+    border-radius: 4px
+}
+
+.hidden-img img {
+    width: 160px
+}
+
+.top-div .top-div-right i:hover .hidden-img {
+    display: block
+}
+
+.top-div .top-div-right i span {
+    margin: 0;
+    display: block;
+    line-height: 30px;
+    font-size: 16px;
+    color: #666;
+    padding: 0 10px;
+    border: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.top-div .top-div-right i span:first-child {
+    margin-top: 16px
+}
+
+.top-div .top-div-right i span:last-child {
+    font-size: 12px;
+    margin-bottom: 12px
+}
+
+.copy-prompt {
+    display: none;
+    color: green;
+    font-weight: 700;
+    float: right;
+    line-height: 63px;
+    padding: 0 10px
+}
