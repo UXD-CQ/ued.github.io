@@ -121,3 +121,10 @@
     line-height: 63px;
     padding: 0 10px
 }
+/* 响应式 */
+@media screen and (max-width: 768px) {
+    .top-div .top-div-left span{
+        /* 隐藏 */
+        display: none;
+    }
+}
